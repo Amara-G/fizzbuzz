@@ -1,3 +1,4 @@
+file = open("Trails.csv")
 def task_1(file):
 	l = []
 	m = []
@@ -17,7 +18,7 @@ def task_1(file):
 				e.append(l)
 				print(e)
 task_1(file)
-
+file = open("Trails.csv")
 def task1_a(file):
         k = []
         for i in file:
@@ -26,3 +27,20 @@ def task1_a(file):
                         if k[10]v>= '2000':
                                 t.append(k)
 				print(k)
+file = open("Trails.csv")
+def task1_b(file):
+        count_Active = []
+        count_lighting = []
+        count_bc = []
+        for i in file:
+                l = i.split(",")
+                for each in l:
+                        if l[15] == 'ACTIVE':
+                                count_Active += 1
+                        if l[12] == 'YES':
+                                count_lighting += 1
+                        if l[23] == 'YES' and l[25] == 'YES'
+                                count_bc += 1
+                print("ACTIVE=", count_Active)
+                print("lighting=", count_lighting)
+                print("hiking and walking = ", count_bc)

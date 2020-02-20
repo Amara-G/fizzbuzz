@@ -21,12 +21,13 @@ task_1(file)
 file = open("Trails.csv")
 def task1_a(file):
         k = []
+	t = []
         for i in file:
                 k = i.split(",")
                 for each in k:
                         if k[10]v>= '2000':
                                 t.append(k)
-				print(k)
+				print(t)
 task1_a(file)
 file = open("Trails.csv")
 def task1_b(file):

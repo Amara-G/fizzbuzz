@@ -17,3 +17,12 @@ def task_1(file):
 				e.append(l)
 				print(e)
 task_1(file)
+
+def task1_a(file):
+        k = []
+        for i in file:
+                k = i.split(",")
+                for each in k:
+                        if k[10]v>= '2000':
+                                t.append(k)
+				print(k)
